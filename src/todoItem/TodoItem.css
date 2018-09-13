@@ -1,0 +1,39 @@
+.cont-todoItem{
+    width: 100%;
+    margin: 0.75rem 0;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0086ed;
+    color: white;
+    border-radius: 2px;
+}
+
+.cont-todoItem-id{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 10%;
+}
+
+.cont-todoItem-name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+}
+
+.cont-todoItem-delete{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 10%;
+}
+
+.cont-todoItem-delete span{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+}

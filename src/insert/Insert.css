@@ -1,0 +1,27 @@
+.cont-insert{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #0086ed;
+}
+
+.insert-input{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    border: 0;
+    border-radius:  2px;
+}
+
+.insert-button{
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 0;
+    color: #0086ed;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

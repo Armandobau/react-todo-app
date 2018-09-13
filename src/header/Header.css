@@ -1,0 +1,13 @@
+.Header{
+    width: 100%;
+    background-color: #0086ed;
+    padding: 1rem;
+}
+
+.Header span{
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
