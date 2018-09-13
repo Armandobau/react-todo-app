@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      actual: 0,
+      actual: null,
       nuevo: {
         id: "",
         name: ""
@@ -19,14 +19,6 @@ class App extends Component {
         /*{
           id: 1,
           name: "fregar"
-        },
-        {
-          id: 2,
-          name: "barrer"
-        },
-        {
-          id: 3,
-          name: "limpiar"
         }*/
       ]
     };
@@ -48,7 +40,7 @@ class App extends Component {
 
     
     localStorage.setItem('data', JSON.stringify(this.state.data));
-    
+    localStorage.setItem('index', JSON.stringify(this.state.actual));
 
   }
 
@@ -66,6 +58,7 @@ class App extends Component {
 
   ///////////////
   componentDidMount() {
+    //Datos
     let retrievedObject = localStorage.getItem('data');
     if(retrievedObject == null){
       localStorage.setItem('data', []);
@@ -74,6 +67,17 @@ class App extends Component {
     else{
       this.setState({data: JSON.parse(retrievedObject)});
       console.log(this.state.data);
+    }
+
+    //Indice
+    let retrievedIndex = localStorage.getItem('index');
+    if(retrievedIndex == null){
+      localStorage.setItem('index', 0);
+      console.log(this.state.actual);
+    }
+    else{
+      this.setState({actual: JSON.parse(retrievedIndex)});
+      console.log(this.state.actual);
     }
     
     //if (this.state.data !== null) {
